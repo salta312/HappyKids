@@ -7,15 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9A3F8DE4DFCF9C1F7A8C33F /* Pods_HappyKids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32E55BFBB268BC051453F44 /* Pods_HappyKids.framework */; };
+		B716F2B31E69532A00CFB2D1 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716F2B21E69532A00CFB2D1 /* MyTableViewCell.swift */; };
+		B728C7921E67214C000E1448 /* Calculator1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B728C7911E67214C000E1448 /* Calculator1ViewController.swift */; };
+		B728C7941E674C3E000E1448 /* Child3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B728C7931E674C3E000E1448 /* Child3ViewController.swift */; };
+		B728C7961E675C51000E1448 /* Child2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B728C7951E675C51000E1448 /* Child2ViewController.swift */; };
+		B72F2D3C1E64A0CF00DD99CF /* UserToDiet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F2D3B1E64A0CF00DD99CF /* UserToDiet.swift */; };
+		B72F2D3E1E64A11500DD99CF /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F2D3D1E64A11500DD99CF /* Diet.swift */; };
+		B72F2D401E65309A00DD99CF /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F2D3F1E65309A00DD99CF /* Cart.swift */; };
+		B72F2D421E655AD000DD99CF /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F2D411E655ACF00DD99CF /* Child.swift */; };
+		B72F2D441E65649A00DD99CF /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F2D431E65649A00DD99CF /* DietViewController.swift */; };
+		B72F2D461E65CA0500DD99CF /* Child1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F2D451E65CA0500DD99CF /* Child1ViewController.swift */; };
+		B75F4C8C1E668B69007D8D4A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F4C8B1E668B69007D8D4A /* CalculatorViewController.swift */; };
+		B75FD6D71E6772DF00B61849 /* Recepies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FD6D61E6772DF00B61849 /* Recepies.swift */; };
+		B75FD6D91E67774B00B61849 /* Recepies2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FD6D81E67774B00B61849 /* Recepies2ViewController.swift */; };
+		B75FD6DB1E67C64A00B61849 /* DeseaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FD6DA1E67C64A00B61849 /* DeseaseViewController.swift */; };
+		B75FD6DD1E67ED2A00B61849 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FD6DC1E67ED2900B61849 /* ProfileViewController.swift */; };
+		B75FD6DF1E67F2EE00B61849 /* RemoveFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FD6DE1E67F2EE00B61849 /* RemoveFoodViewController.swift */; };
+		B78DC2A21E61F5370098882E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DC2A11E61F5370098882E /* Food.swift */; };
+		B78DC2A41E62D59B0098882E /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DC2A31E62D59B0098882E /* FoodViewController.swift */; };
+		B7A2CF081E6429B300F1C78B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2CF071E6429B300F1C78B /* SecondViewController.swift */; };
+		B7A2CF0A1E64563A00F1C78B /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2CF091E64563A00F1C78B /* ChildViewController.swift */; };
 		B7F7C01D1E5FFA5D00A90E77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7C01C1E5FFA5D00A90E77 /* AppDelegate.swift */; };
 		B7F7C01F1E5FFA5D00A90E77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7C01E1E5FFA5D00A90E77 /* ViewController.swift */; };
 		B7F7C0221E5FFA5D00A90E77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F7C0201E5FFA5D00A90E77 /* Main.storyboard */; };
 		B7F7C0251E5FFA5D00A90E77 /* HappyKids.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7F7C0231E5FFA5D00A90E77 /* HappyKids.xcdatamodeld */; };
 		B7F7C0271E5FFA5D00A90E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F7C0261E5FFA5D00A90E77 /* Assets.xcassets */; };
 		B7F7C02A1E5FFA5D00A90E77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F7C0281E5FFA5D00A90E77 /* LaunchScreen.storyboard */; };
+		B7F7C0321E5FFD4200A90E77 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7C0311E5FFD4200A90E77 /* TabBarController.swift */; };
+		B7F7C0341E6000C100A90E77 /* RecepiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7C0331E6000C100A90E77 /* RecepiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270F598D8D85FFEE01EEFCF9 /* Pods-HappyKids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyKids.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyKids/Pods-HappyKids.release.xcconfig"; sourceTree = "<group>"; };
+		A3D028BA94B5E48541A53D84 /* Pods-HappyKids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyKids.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyKids/Pods-HappyKids.debug.xcconfig"; sourceTree = "<group>"; };
+		B716F2B21E69532A00CFB2D1 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		B728C7911E67214C000E1448 /* Calculator1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator1ViewController.swift; sourceTree = "<group>"; };
+		B728C7931E674C3E000E1448 /* Child3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child3ViewController.swift; sourceTree = "<group>"; };
+		B728C7951E675C51000E1448 /* Child2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child2ViewController.swift; sourceTree = "<group>"; };
+		B72F2D3B1E64A0CF00DD99CF /* UserToDiet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToDiet.swift; sourceTree = "<group>"; };
+		B72F2D3D1E64A11500DD99CF /* Diet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diet.swift; sourceTree = "<group>"; };
+		B72F2D3F1E65309A00DD99CF /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		B72F2D411E655ACF00DD99CF /* Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		B72F2D431E65649A00DD99CF /* DietViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
+		B72F2D451E65CA0500DD99CF /* Child1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child1ViewController.swift; sourceTree = "<group>"; };
+		B75F4C8B1E668B69007D8D4A /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		B75FD6D61E6772DF00B61849 /* Recepies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recepies.swift; sourceTree = "<group>"; };
+		B75FD6D81E67774B00B61849 /* Recepies2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recepies2ViewController.swift; sourceTree = "<group>"; };
+		B75FD6DA1E67C64A00B61849 /* DeseaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeseaseViewController.swift; sourceTree = "<group>"; };
+		B75FD6DC1E67ED2900B61849 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B75FD6DE1E67F2EE00B61849 /* RemoveFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveFoodViewController.swift; sourceTree = "<group>"; };
+		B78DC2A11E61F5370098882E /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Food.swift; path = ../Food.swift; sourceTree = "<group>"; };
+		B78DC2A31E62D59B0098882E /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		B7A2CF071E6429B300F1C78B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B7A2CF091E64563A00F1C78B /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		B7F7C0191E5FFA5D00A90E77 /* HappyKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F7C01C1E5FFA5D00A90E77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F7C01E1E5FFA5D00A90E77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +69,9 @@
 		B7F7C0261E5FFA5D00A90E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7F7C0291E5FFA5D00A90E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7F7C02B1E5FFA5D00A90E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F7C0311E5FFD4200A90E77 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B7F7C0331E6000C100A90E77 /* RecepiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecepiesViewController.swift; sourceTree = "<group>"; };
+		F32E55BFBB268BC051453F44 /* Pods_HappyKids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyKids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +79,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A3F8DE4DFCF9C1F7A8C33F /* Pods_HappyKids.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6784D0DD9A7713ECD727A24B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3D028BA94B5E48541A53D84 /* Pods-HappyKids.debug.xcconfig */,
+				270F598D8D85FFEE01EEFCF9 /* Pods-HappyKids.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E6E82458BC3B6122B688E91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F32E55BFBB268BC051453F44 /* Pods_HappyKids.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7F7C0101E5FFA5C00A90E77 = {
 			isa = PBXGroup;
 			children = (
 				B7F7C01B1E5FFA5D00A90E77 /* HappyKids */,
 				B7F7C01A1E5FFA5D00A90E77 /* Products */,
+				6784D0DD9A7713ECD727A24B /* Pods */,
+				8E6E82458BC3B6122B688E91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,12 +125,34 @@
 			isa = PBXGroup;
 			children = (
 				B7F7C01C1E5FFA5D00A90E77 /* AppDelegate.swift */,
+				B78DC2A11E61F5370098882E /* Food.swift */,
+				B7F7C0311E5FFD4200A90E77 /* TabBarController.swift */,
 				B7F7C01E1E5FFA5D00A90E77 /* ViewController.swift */,
 				B7F7C0201E5FFA5D00A90E77 /* Main.storyboard */,
 				B7F7C0261E5FFA5D00A90E77 /* Assets.xcassets */,
 				B7F7C0281E5FFA5D00A90E77 /* LaunchScreen.storyboard */,
 				B7F7C02B1E5FFA5D00A90E77 /* Info.plist */,
 				B7F7C0231E5FFA5D00A90E77 /* HappyKids.xcdatamodeld */,
+				B7F7C0331E6000C100A90E77 /* RecepiesViewController.swift */,
+				B78DC2A31E62D59B0098882E /* FoodViewController.swift */,
+				B7A2CF071E6429B300F1C78B /* SecondViewController.swift */,
+				B7A2CF091E64563A00F1C78B /* ChildViewController.swift */,
+				B72F2D3B1E64A0CF00DD99CF /* UserToDiet.swift */,
+				B72F2D3D1E64A11500DD99CF /* Diet.swift */,
+				B72F2D3F1E65309A00DD99CF /* Cart.swift */,
+				B72F2D411E655ACF00DD99CF /* Child.swift */,
+				B72F2D431E65649A00DD99CF /* DietViewController.swift */,
+				B72F2D451E65CA0500DD99CF /* Child1ViewController.swift */,
+				B75F4C8B1E668B69007D8D4A /* CalculatorViewController.swift */,
+				B728C7911E67214C000E1448 /* Calculator1ViewController.swift */,
+				B728C7931E674C3E000E1448 /* Child3ViewController.swift */,
+				B728C7951E675C51000E1448 /* Child2ViewController.swift */,
+				B75FD6D61E6772DF00B61849 /* Recepies.swift */,
+				B75FD6D81E67774B00B61849 /* Recepies2ViewController.swift */,
+				B75FD6DA1E67C64A00B61849 /* DeseaseViewController.swift */,
+				B75FD6DC1E67ED2900B61849 /* ProfileViewController.swift */,
+				B75FD6DE1E67F2EE00B61849 /* RemoveFoodViewController.swift */,
+				B716F2B21E69532A00CFB2D1 /* MyTableViewCell.swift */,
 			);
 			path = HappyKids;
 			sourceTree = "<group>";
@@ -74,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7F7C02E1E5FFA5D00A90E77 /* Build configuration list for PBXNativeTarget "HappyKids" */;
 			buildPhases = (
+				2AE0235EC27277681D3F1966 /* [CP] Check Pods Manifest.lock */,
 				B7F7C0151E5FFA5C00A90E77 /* Sources */,
 				B7F7C0161E5FFA5C00A90E77 /* Frameworks */,
 				B7F7C0171E5FFA5C00A90E77 /* Resources */,
+				4E903CE8050F779C6C2D3103 /* [CP] Embed Pods Frameworks */,
+				5B5BB76398E35337EFB008D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,7 +192,7 @@
 				TargetAttributes = {
 					B7F7C0181E5FFA5C00A90E77 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 546WXG898K;
+						DevelopmentTeam = L853XLC29S;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,14 +228,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AE0235EC27277681D3F1966 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E903CE8050F779C6C2D3103 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyKids/Pods-HappyKids-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B5BB76398E35337EFB008D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyKids/Pods-HappyKids-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B7F7C0151E5FFA5C00A90E77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A2CF081E6429B300F1C78B /* SecondViewController.swift in Sources */,
+				B75FD6DB1E67C64A00B61849 /* DeseaseViewController.swift in Sources */,
 				B7F7C01F1E5FFA5D00A90E77 /* ViewController.swift in Sources */,
+				B75F4C8C1E668B69007D8D4A /* CalculatorViewController.swift in Sources */,
+				B72F2D3E1E64A11500DD99CF /* Diet.swift in Sources */,
+				B7A2CF0A1E64563A00F1C78B /* ChildViewController.swift in Sources */,
+				B78DC2A41E62D59B0098882E /* FoodViewController.swift in Sources */,
+				B728C7921E67214C000E1448 /* Calculator1ViewController.swift in Sources */,
+				B7F7C0341E6000C100A90E77 /* RecepiesViewController.swift in Sources */,
+				B7F7C0321E5FFD4200A90E77 /* TabBarController.swift in Sources */,
+				B728C7941E674C3E000E1448 /* Child3ViewController.swift in Sources */,
+				B72F2D401E65309A00DD99CF /* Cart.swift in Sources */,
+				B75FD6D91E67774B00B61849 /* Recepies2ViewController.swift in Sources */,
 				B7F7C01D1E5FFA5D00A90E77 /* AppDelegate.swift in Sources */,
+				B75FD6DF1E67F2EE00B61849 /* RemoveFoodViewController.swift in Sources */,
+				B72F2D461E65CA0500DD99CF /* Child1ViewController.swift in Sources */,
+				B75FD6DD1E67ED2A00B61849 /* ProfileViewController.swift in Sources */,
+				B75FD6D71E6772DF00B61849 /* Recepies.swift in Sources */,
+				B716F2B31E69532A00CFB2D1 /* MyTableViewCell.swift in Sources */,
+				B728C7961E675C51000E1448 /* Child2ViewController.swift in Sources */,
+				B72F2D421E655AD000DD99CF /* Child.swift in Sources */,
+				B72F2D441E65649A00DD99CF /* DietViewController.swift in Sources */,
 				B7F7C0251E5FFA5D00A90E77 /* HappyKids.xcdatamodeld in Sources */,
+				B78DC2A21E61F5370098882E /* Food.swift in Sources */,
+				B72F2D3C1E64A0CF00DD99CF /* UserToDiet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +426,10 @@
 		};
 		B7F7C02F1E5FFA5D00A90E77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D028BA94B5E48541A53D84 /* Pods-HappyKids.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 546WXG898K;
+				DEVELOPMENT_TEAM = L853XLC29S;
 				INFOPLIST_FILE = HappyKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = saltaim.HappyKids;
@@ -276,9 +440,10 @@
 		};
 		B7F7C0301E5FFA5D00A90E77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270F598D8D85FFEE01EEFCF9 /* Pods-HappyKids.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 546WXG898K;
+				DEVELOPMENT_TEAM = L853XLC29S;
 				INFOPLIST_FILE = HappyKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = saltaim.HappyKids;
@@ -306,6 +471,7 @@
 				B7F7C0301E5FFA5D00A90E77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

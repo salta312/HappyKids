@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecepiesViewController.swift
 //  HappyKids
 //
 //  Created by Saltanat Aimakhanova on 2/24/17.
@@ -11,19 +11,19 @@ import Cartography
 import SwiftSpinner
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class RecepiesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var search = UISearchController(searchResultsController: nil)
     var tableView: UITableView = UITableView()
-    var food = [Food]()
+    var food = [Recepies]()
     var backendless = Backendless.sharedInstance()
-    var searchedFood = [Food]()
-
+    var searchedFood = [Recepies]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.red
-        self.title = "food"
+        self.title = "recepies"
         SwiftSpinner.show("Connecting...")
         self.findFoodAssync()
         SwiftSpinner.hide()
@@ -34,16 +34,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(MyTableViewCell.self, forCellReuseIdentifier: "cell")
-        //var c = MyTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-       // tableView.register(c, forCellReuseIdentifier: "cell")
-        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.tableHeaderView = search.searchBar
         self.createView()
-
+        
     }
     func findFoodAssync(){
         SwiftSpinner.show("Connecting...")
-        let dataStore = backendless?.data.of(Food.ofClass())
+        let dataStore = backendless?.data.of(Recepies.ofClass())
         var error: Fault?
         let result = dataStore?.find(&error)
         if error == nil {
@@ -52,13 +49,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return
             }
             for obj in fs {
-                food.append(obj as! Food)
+                food.append(obj as! Recepies)
             }
             SwiftSpinner.hide()
             
         }else{
             SwiftSpinner.hide()
-
+            
             print("Server reported an error: \(error)")
         }
     }
@@ -66,7 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         view.addSubview(tableView)
         constrain(view, tableView){
             view, tableView in
-            tableView.top == view.top 
+            tableView.top == view.top
             //tableView.centerX == view.centerX
             tableView.width == view.width
             tableView.right == view.right
@@ -74,8 +71,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }
     }
-
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -88,7 +85,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if search.isActive && search.searchBar.text != ""{
             return self.searchedFood.count
         }
-
+        
         return self.food.count
         
         
@@ -101,9 +98,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         let name: String!
         let ph: String!
-       // let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         let cell = MyTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-       // let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MyTableViewCell
         if search.isActive && search.searchBar.text != ""{
             name = self.searchedFood[(indexPath as NSIndexPath).item].name
             // ch = self.searchedChallanges[(indexPath as NSIndexPath).item]
@@ -116,47 +111,46 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             ph = self.food[(indexPath as NSIndexPath).item].pic
         }
         cell.name = name
-        print(name)
        // cell.textLabel?.text = name
         do{
             // try cell.imageView?.image = UIImage(data: Data(contentsOf: URL(fileURLWithPath: ph)))
             let url = URL(string: ph)
             let data = try Data(contentsOf: url!)
-          //  cell.imageView?.image = UIImage(data: data)
             cell.img = UIImage(data: data)
+           // cell.imageView?.image = UIImage(data: data)
         }catch {
             print("I am here")
         }
         //cell.imageView?.image = UIImage(named: "nop")
-//        do{
-//            // try cell.imageView?.image = UIImage(data: Data(contentsOf: URL(fileURLWithPath: ph)))
-//            let url = URL(string: ph)
-//            let data = try Data(contentsOf: url!)
-//            cell.imageView?.image = UIImage(data: data)
-//        }catch {
-//            print("I am here")
-//        }
+        //        do{
+        //            // try cell.imageView?.image = UIImage(data: Data(contentsOf: URL(fileURLWithPath: ph)))
+        //            let url = URL(string: ph)
+        //            let data = try Data(contentsOf: url!)
+        //            cell.imageView?.image = UIImage(data: data)
+        //        }catch {
+        //            print("I am here")
+        //        }
         return cell
     }
     func filterContentForSearchText(searchText: String, scope: String = "All") {
-        searchedFood = food.filter({ (f:Food) -> Bool in
-             return f.name.lowercased().contains(searchText.lowercased())
-          //  return true
+        searchedFood = food.filter({ (f:Recepies) -> Bool in
+            return f.name.lowercased().contains(searchText.lowercased())
+            //  return true
         })
         tableView.reloadData()
     }
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         var ch = self.food[(indexPath as NSIndexPath).item]
-        var vc = FoodViewController()
-        vc.myFood = ch
-        //vc.challange = ch
+        var vc = Recepies2ViewController()
+        vc.recept = ch
+//        //vc.challange = ch
         self.navigationController?.pushViewController(vc, animated: true)
         return indexPath
     }
-
-
+    
+    
 }
-extension ViewController: UISearchResultsUpdating {
+extension RecepiesViewController: UISearchResultsUpdating {
     // @available(iOS 8.0, *)
     public func updateSearchResults(for searchController: UISearchController) {
         //  isSearched = true

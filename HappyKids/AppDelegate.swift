@@ -13,10 +13,33 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let APP_ID = "7C2B323D-7012-54E8-FF19-A5553B667700"
+    let SECRET_KEY = "F65115E3-FF61-9697-FF22-811C040C2C00"
+    let VERSION_NUM = "v1"
+    var backendless = Backendless.sharedInstance()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        backendless?.initApp(APP_ID, secret:SECRET_KEY, version:VERSION_NUM)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+      //  window?.backgroundColor = UIColor.blackColor()
+        // Setup our initialViewController
+        print ("It is \(backendless?.userService.currentUser)")
+        if (backendless?.userService.currentUser != nil){
+            //ChildViewController
+            //Child1ViewController
+            window?.rootViewController = UINavigationController(rootViewController: TabBarController())
+         //   window?.rootViewController = UINavigationController(rootViewController:Child3ViewController())
+
+          //  window?.rootViewController = UINavigationController(rootViewController:TabBarController())
+          //  window?.rootViewController = UINavigationController(rootViewController:ChildViewController())
+
+        }else{
+            window?.rootViewController = UINavigationController(rootViewController: SecondViewController())
+        }
+        window?.makeKeyAndVisible()
+
         return true
     }
 
